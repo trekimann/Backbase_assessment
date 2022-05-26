@@ -1,5 +1,8 @@
 package com.backbase_assessment.backbase_assessment.api;
 
+import lombok.Getter;
+
+@Getter
 public class Omdb {
     
     private String url = "http://www.omdbapi.com";

@@ -14,4 +14,7 @@ public class OscarRequest {
 
     @JsonProperty("omdbkey")
     private String omdbKey;
+
+    @JsonProperty("userRating")
+    private int userRating;
 }
