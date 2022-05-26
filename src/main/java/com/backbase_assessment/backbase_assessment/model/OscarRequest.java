@@ -4,11 +4,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 @NoArgsConstructor
 @Getter
 public class OscarRequest {
     
+    @NonNull
     @JsonProperty("title")
     private String title;
 
@@ -16,5 +18,8 @@ public class OscarRequest {
     private String omdbKey;
 
     @JsonProperty("userRating")
-    private int userRating;
+    private Integer userRating;
+
+    @JsonProperty("year")
+    private Integer year;
 }

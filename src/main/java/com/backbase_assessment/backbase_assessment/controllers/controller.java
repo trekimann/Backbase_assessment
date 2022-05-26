@@ -20,7 +20,8 @@ public class Controller {
     
     @GetMapping(path = "/oscar", produces = "application/json")
     public ResponseEntity<String> wonBestPicture(@RequestBody OscarRequest request) {
-        return ResponseEntity.ok("Hello World: " + request.getTitle());
+
+        return ResponseEntity.ok(this.omdb.contactOmdb(request));
     }
 
     @GetMapping(path = "/top-ten", produces = "application/json")
