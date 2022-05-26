@@ -27,7 +27,7 @@ to-do list with things you would add if you have more time or explaining what is
 * ## [assumptions.md](/src/main/documentation/assumptions.md)
 Your assumptions when solving the challenge
 * ## [scale.md](/src/main/documentation/scale.md) 
-A description of how it will scale when the number of users/agents/consumers grows from 100 per day to 10000000 per day, and what changes would have to be made to keep the same quality of service.
+A description of how it will scale when the number of users/agents/consumers grows from 100 per day to 10000000 per day, and what changes would have to be made to keep the same quality of service?
 
 * ## Diagrams
 Any diagram you believe would be useful, more if you find it necessary:
