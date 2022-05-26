@@ -16,17 +16,17 @@ the proper use of any framework or library included..
 As mentioned, your proposed solution should be production-ready and should be easily
 understandable by another developer, colleague or customer, so please make sure you
 include the following documentation.
-* ## solution.md
+* ## [solution.md](/src/main/documentation/solution.md)
 A short (min two lines, max half a page) description of the solution and explaining some design decisions
-* ## how_to_run.md
+* ## [how_to_run.md](/src/main/documentation/how_to_run.md)
 A short explanation about how to run the solution with all the needed parts
-* ## how_to_test.md
+* ## [how_to_test.md](/src/main/documentation/how_to_test.md)
 File explaining what needs to be done to use the service.
-* ## to_do.md 
+* ## [to_do.md](/src/main/documentation/to_do.md)
 to-do list with things you would add if you have more time or explaining what is missing and why etc
-* ## assumptions.md
+* ## [assumptions.md](/src/main/documentation/assumptions.md)
 Your assumptions when solving the challenge
-* ## scale.md 
+* ## [scale.md](/src/main/documentation/scale.md) 
 A description of how it will scale when the number of users/agents/consumers grows from 100 per day to 10000000 per day, and what changes would have to be made to keep the same quality of service.
 
 * ## Diagrams
