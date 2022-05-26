@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### omdb config file
+omdb.config
