@@ -1,5 +1,11 @@
 package com.backbase_assessment.backbase_assessment.api;
 
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
 import com.backbase_assessment.backbase_assessment.model.OscarRequest;
 
 import lombok.Getter;
@@ -29,7 +35,29 @@ public class Omdb {
             omdbRequest = omdbRequest + "&y=" + request.getYear();
         }
 
+        omdbApiHttpRequest(omdbRequest);
+
         return omdbRequest;
+    }
+    
+    public void omdbApiHttpRequest(String url){
+        try {
+            HttpRequest request = HttpRequest.newBuilder(new URI(url))
+            .GET()
+            .build();
+
+            HttpResponse<String> response = HttpClient
+            .newHttpClient()
+            .send(request, HttpResponse.BodyHandlers.ofString());
+
+
+
+            response.body();
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
     }
     
 }
